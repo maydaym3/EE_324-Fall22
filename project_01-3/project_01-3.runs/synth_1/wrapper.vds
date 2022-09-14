@@ -1,0 +1,297 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Sep 13 21:33:48 2022
+# Process ID: 16064
+# Current directory: C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.runs/synth_1
+# Command line: vivado.exe -log wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
+# Log file: C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.runs/synth_1/wrapper.vds
+# Journal file: C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JAMES, OS: Windows, CPU Frequency: 3498 MHz, CPU Physical cores: 4, Host memory: 17115 MB
+#-----------------------------------------------------------
+source wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/utils_1/imports/synth_1/count_wrap.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/utils_1/imports/synth_1/count_wrap.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top wrapper -part xc7z007sclg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3192
+WARNING: [Synth 8-9971] redeclaration of ansi port 'VDE' is not allowed [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:78]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'R' is not allowed [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:79]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'G' is not allowed [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:79]
+WARNING: [Synth 8-9971] redeclaration of ansi port 'B' is not allowed [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:79]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1623.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wrapper' [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:68]
+INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:42]
+	Parameter H_Pixels bound to: 823 - type: integer 
+	Parameter V_Pixels bound to: 600 - type: integer 
+	Parameter H_SYNC bound to: 96 - type: integer 
+	Parameter V_SYNC bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bin_count' [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:21]
+	Parameter MAX_COUNT bound to: 823 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin_count' (0#1) [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:21]
+INFO: [Synth 8-6157] synthesizing module 'bin_count__parameterized0' [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:21]
+	Parameter MAX_COUNT bound to: 600 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bin_count__parameterized0' (0#1) [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (0#1) [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'wrapper' (0#1) [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/sources_1/imports/new/wrapper.v:68]
+WARNING: [Synth 8-3917] design wrapper has port VDE driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[7] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[6] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[5] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[4] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[0] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[7] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[6] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[5] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[4] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[0] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[7] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[6] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[5] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[4] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1623.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1623.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1623.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1623.258 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'H_SYNC'. [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V_SYNC'. [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1670.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1670.375 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design wrapper has port VDE driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[7] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[6] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[5] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[4] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port R[0] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[7] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[6] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[5] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[4] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port B[0] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[7] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[6] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[5] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[4] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[3] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[2] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[1] driven by constant 1
+WARNING: [Synth 8-3917] design wrapper has port G[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     5|
+|3     |LUT3 |     2|
+|4     |LUT4 |     4|
+|5     |LUT5 |     6|
+|6     |LUT6 |    21|
+|7     |FDCE |    20|
+|8     |IBUF |     3|
+|9     |OBUF |    27|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1670.375 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1670.375 ; gain = 47.117
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1674.473 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e3601b67
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 57 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1678.160 ; gain = 54.902
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.runs/synth_1/wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wrapper_utilization_synth.rpt -pb wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 13 21:34:36 2022...

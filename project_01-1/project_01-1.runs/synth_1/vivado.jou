@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Sep  7 00:49:27 2022
+# Process ID: 8740
+# Current directory: C:/Users/james/source/repos/E_E-324/project_01-1/project_01-1.runs/synth_1
+# Command line: vivado.exe -log count_wrap.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source count_wrap.tcl
+# Log file: C:/Users/james/source/repos/E_E-324/project_01-1/project_01-1.runs/synth_1/count_wrap.vds
+# Journal file: C:/Users/james/source/repos/E_E-324/project_01-1/project_01-1.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JAMES, OS: Windows, CPU Frequency: 3498 MHz, CPU Physical cores: 4, Host memory: 17115 MB
+#-----------------------------------------------------------
+source count_wrap.tcl -notrace

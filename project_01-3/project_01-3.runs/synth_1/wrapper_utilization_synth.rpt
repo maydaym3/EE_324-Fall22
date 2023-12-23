@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Tue Sep 13 21:34:35 2022
+| Date         : Fri Sep 16 18:53:50 2022
 | Host         : DESKTOP-JAMES running 64-bit major release  (build 9200)
 | Command      : report_utilization -file wrapper_utilization_synth.rpt -pb wrapper_utilization_synth.pb
 | Design       : wrapper
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   31 |     0 |          0 |     14400 |  0.22 |
-|   LUT as Logic          |   31 |     0 |          0 |     14400 |  0.22 |
+| Slice LUTs*             |   33 |     0 |          0 |     14400 |  0.23 |
+|   LUT as Logic          |   33 |     0 |          0 |     14400 |  0.23 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
 | Slice Registers         |   20 |     0 |          0 |     28800 |  0.07 |
 |   Register as Flip Flop |   20 |     0 |          0 |     28800 |  0.07 |
@@ -91,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   30 |     0 |          0 |       100 | 30.00 |
+| Bonded IOB                  |    5 |     0 |          0 |       100 |  5.00 |
 | Bonded IPADs                |    0 |     0 |          0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |          0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         2 |  0.00 |
@@ -147,14 +147,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |   27 |                  IO |
-| LUT6     |   21 |                 LUT |
+| LUT6     |   22 |                 LUT |
 | FDCE     |   20 |        Flop & Latch |
-| LUT5     |    6 |                 LUT |
-| LUT2     |    5 |                 LUT |
-| LUT4     |    4 |                 LUT |
+| LUT5     |    8 |                 LUT |
+| LUT3     |    4 |                 LUT |
+| LUT4     |    3 |                 LUT |
 | IBUF     |    3 |                  IO |
-| LUT3     |    2 |                 LUT |
+| OBUF     |    2 |                  IO |
+| LUT2     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

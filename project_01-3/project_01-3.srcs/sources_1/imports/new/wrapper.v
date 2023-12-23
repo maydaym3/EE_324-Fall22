@@ -47,7 +47,9 @@ module VGA_Controller #(parameter H_Pixels = 823,V_Pixels=600,H_SYNC=96,V_SYNC=2
     output A,
     output B
     );
+    (* mark_debug = "true", keep = "true" *)
     wire [9:0] a_val;
+    (* mark_debug = "true", keep = "true" *)
     wire [9:0] b_val;
     wire a_en,b_en;
         
@@ -69,10 +71,10 @@ module wrapper(
 input rst,
 input clk,
 input en,
+    (* mark_debug = "true", keep = "true" *)
 output H_sync,
-output V_sync,
-output VDE,
-output [7:0] R,B,G
+    (* mark_debug = "true", keep = "true" *)
+output V_sync
 );
 wire HSYNC,VSYNC;
 wire VDE;
@@ -81,9 +83,5 @@ wire [7:0] R,G,B;
 VGA_Controller #(.H_Pixels(823),.V_Pixels(600),.H_SYNC(96),.V_SYNC(2))
 VGA(.rst(rst),.clk(clk),.en(en),.A(H_sync),.B(V_sync));
 
-assign R=511;
-assign G=511;
-assign B=511;
-assign VDE=1;
 
 endmodule

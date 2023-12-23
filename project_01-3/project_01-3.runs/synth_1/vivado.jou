@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Tue Sep 13 21:33:48 2022
-# Process ID: 16064
+# Start of session at: Fri Sep 16 18:53:02 2022
+# Process ID: 14140
 # Current directory: C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.runs/synth_1
 # Command line: vivado.exe -log wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wrapper.tcl
 # Log file: C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.runs/synth_1/wrapper.vds

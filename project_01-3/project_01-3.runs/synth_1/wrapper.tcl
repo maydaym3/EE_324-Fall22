@@ -70,11 +70,10 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/james/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16548-DESKTOP-JAMES/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -87,6 +86,8 @@ set_property webtalk.parent_dir C:/Users/james/source/repos/E_E-324/project_01-3
 set_property parent.project_path C:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property ip_repo_paths c:/Users/james/source/repos/E_E-324/hdmi_tx_1.0 [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/james/source/repos/E_E-324/project_01-3/project_01-3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

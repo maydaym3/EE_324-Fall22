@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Nov  6 23:25:39 2022
+# Process ID: 12752
+# Current directory: C:/Users/james/source/repos/E_E-324/project_03-2/project_03-2.runs/synth_1
+# Command line: vivado.exe -log axi_mapped_registers.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_mapped_registers.tcl
+# Log file: C:/Users/james/source/repos/E_E-324/project_03-2/project_03-2.runs/synth_1/axi_mapped_registers.vds
+# Journal file: C:/Users/james/source/repos/E_E-324/project_03-2/project_03-2.runs/synth_1\vivado.jou
+# Running On: DESKTOP-JAMES, OS: Windows, CPU Frequency: 3498 MHz, CPU Physical cores: 4, Host memory: 17115 MB
+#-----------------------------------------------------------
+source axi_mapped_registers.tcl -notrace

@@ -1,0 +1,31 @@
+Nothing to build in platform 'RTM_Averager'
+
+16:34:21 **** Incremental Build of configuration Debug for project RTM_Averager_app ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/E_E-324/project_06-2/RTM_system/export/RTM_system/sw/RTM_system/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: RTM_Averager_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/E_E-324/project_06-2/RTM_system/export/RTM_system/sw/RTM_system/standalone_domain/bsplib/lib -o "RTM_Averager_app.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: RTM_Averager_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size RTM_Averager_app.elf  |tee "RTM_Averager_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20580	   1160	  22568	  44308	   ad14	RTM_Averager_app.elf
+'Finished building: RTM_Averager_app.elf.size'
+' '
+16:34:22 **** Incremental Build of configuration Debug for project RTM_Averager_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 60292 E:/E_E-324/project_06-2/RTM_system/export/RTM_system/RTM_system.xpfm standalone_domain C:/Users/james/source/repos/E_E-324/project_06-3/RTM_Averager_app_system/Debug/system.bif
+sdcard_gen --xpfm E:/E_E-324/project_06-2/RTM_system/export/RTM_system/RTM_system.xpfm --sys_config RTM_system --bif C:/Users/james/source/repos/E_E-324/project_06-3/RTM_Averager_app_system/Debug/system.bif --bitstream C:/Users/james/source/repos/E_E-324/project_06-3/RTM_Averager_app/_ide/bitstream/RTM_system_wrapper.bit --elf C:/Users/james/source/repos/E_E-324/project_06-3/RTM_Averager_app/Debug/RTM_Averager_app.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/james/source/repos/E_E-324/project_06-3/RTM_Averager_app/_ide/bitstream/RTM_system_wrapper.bit
+Running C:/Xilinx2/Vitis/2022.1/bin/bootgen  -image C:/Users/james/source/repos/E_E-324/project_06-3/RTM_Averager_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

@@ -1,0 +1,57 @@
+#include "xil_types.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+#define SSD_BASE 0x43C00000
+#define SSDC (*((uint32_t *)(SSD_BASE+0x0))) // Seven Segment Display
+#define BTNS (*((uint32_t *)(SSD_BASE+0x04))) // buttons
+
+uint32_t inttoBCD(uint32_t);
+void sleep(uint32_t);
+
+char bcd_lut[16] = {0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90,0x88,0x83,0xC6,0xA1,0x86,0x8E};
+
+int main(void)
+{
+	SSDC = 0x0000;
+	uint32_t i = 0;
+	uint32_t count = 0;
+	uint32_t read_val;
+
+	for(i=0;i<10;i++)
+	{
+		SSDC = inttoBCD(1111 * i);
+		sleep(7500000);
+	}
+
+	while(1)
+	{
+
+	}
+	return 1;
+}
+
+
+uint32_t inttoBCD(uint32_t number)
+{
+	uint8_t number0;
+	uint8_t number1;
+	uint8_t number2;
+	uint8_t number3;
+
+	number0 = bcd_lut[number%10];
+	number1 = bcd_lut[(number/10)%10];
+	number2 = bcd_lut[(number/100)%10];
+	number3 = bcd_lut[(number/1000)%10];
+
+	return (uint32_t)(number0 + (number1<<8) + (number2<<16) + (number3<<24));
+
+}
+
+void sleep(uint32_t time)
+{
+	int i;
+	for( i = 0 ; i < time ; i++)
+	{};
+
+}
